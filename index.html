@@ -230,43 +230,159 @@
 
         <!-- Interpolating. -->
         <h3 class="title is-4">Simulated Experiments</h3>
-        <div class="content has-text-justified">
-          <p>
-          </p>
-        </div>
         <div class="columns is-vcentered is-centered">
             <img src="./static/images/simulated_results.png"
                  class="interpolation-image"
                  alt="Generating imagined trajectories for distillation."/>
           </div>
+        <div class="content has-text-justified">
+          <p>
+              Our preliminary experiments conducted in DMControl suite show that TWIST outperforms baseline methods including Dreamer with naive domain randomization and model-free RL in both sim-to-sim and sim-to-real experiments by a significant margin.
+          </p>
+        </div>
         </div>
         <br/>
       </div>
       <div class="column is-full-width">
         <!-- Interpolating. -->
         <h3 class="title is-4">Real-world Experiments</h3>
-        <div class="content has-text-justified">
-          <p>
-          </p>
-        </div>
         <div class="columns is-vcentered is-centered">
             <img src="./static/images/real-world_results.png"
                  class="interpolation-image"
                  alt="Generating imagined trajectories for distillation."/>
           </div>
-        </div>
-
-        <h3 class="title is-4">Qualitative Results</h3>
         <div class="content has-text-justified">
           <p>
+              In our real-world experiments, we demonstrate that TWIST is capable of solving manipulation tasks in the real world with improved sample efficiency.  On the other hand, baseline methods struggle to learn a policy efficiently with a limited amount of samples in simulation, thus these methods often fail to solve the task in the real world.
           </p>
         </div>
-        <!-- <div class="columns is-vcentered is-centered"> -->
-        <!--     <img src="./static/images/real-world_results.png" -->
-        <!--          class="interpolation-image" -->
-        <!--          alt="Generating imagined trajectories for distillation."/> -->
-        <!--   </div> -->
-        <!-- </div> -->
+        </div>
+        <br/>
+
+    <h3 class="title is-4">Qualitative Results</h3>
+    <div class="column">
+      <div class="content has-text-centered">
+        <h4 class="title is-5">Push</h4>
+      </div>
+    </div>
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content has-text-centered">
+          <!-- <h2 class="title is-3">Visual Effects</h2> -->
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/push_twist.mp4"
+                    type="video/mp4">
+          </video>
+          <p>TWIST (Our method)</p>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <!-- <h2 class="title is-3">Matting</h2> -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column content">
+            <video id="matting-video" controls playsinline height="100%">
+              <source src="./static/videos/push_dreamer_state_recon.mp4"
+                      type="video/mp4">
+            </video>
+          <p>Dreamer State Recon.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="column">
+        <!-- <h2 class="title is-3">Matting</h2> -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column content">
+            <video id="matting-video" controls playsinline height="100%">
+              <source src="./static/videos/push_dreamer_dr.mp4"
+                      type="video/mp4">
+            </video>
+          <p>Dreamer w/ DR</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="column">
+        <!-- <h2 class="title is-3">Matting</h2> -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column content">
+            <video id="matting-video" controls playsinline height="100%">
+              <source src="./static/videos/push_asymmetric_sac.mp4"
+                      type="video/mp4">
+            </video>
+          <p>Asymmetric SAC</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content has-text-centered">
+        <h4 class="title is-5">Lift</h4>
+      </div>
+    </div>
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content has-text-centered">
+          <!-- <h2 class="title is-3">Visual Effects</h2> -->
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/lift_twist.mp4"
+                    type="video/mp4">
+          </video>
+          <p>TWIST (Our method)</p>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <!-- <h2 class="title is-3">Matting</h2> -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column content">
+            <video id="matting-video" controls playsinline height="100%">
+              <source src="./static/videos/lift_dreamer_state_recon.mp4"
+                      type="video/mp4">
+            </video>
+          <p>Dreamer State Recon.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="column">
+        <!-- <h2 class="title is-3">Matting</h2> -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column content">
+            <video id="matting-video" controls playsinline height="100%">
+              <source src="./static/videos/lift_dreamer_dr.mp4"
+                      type="video/mp4">
+            </video>
+          <p>Dreamer w/ DR</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="column">
+        <!-- <h2 class="title is-3">Matting</h2> -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column content">
+            <video id="matting-video" controls playsinline height="100%">
+              <source src="./static/videos/lift_asymmetric_sac.mp4"
+                      type="video/mp4">
+            </video>
+          <p>Asymmetric SAC</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
       </div>
     </div>
     <!--/ Animation. -->
